@@ -1,35 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: 100vh;
     background-color: black;
-    color: white;
-}
-
-.mode-switch {
-    cursor: pointer;
-    margin-right: 20px;
 }
 
 .rainbow-text {
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     animation: rainbow 14s linear infinite;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    14.29% {
+        background-position: 14.29% 50%;
+    }
+    28.57% {
+        background-position: 28.57% 50%;
+    }
+    42.86% {
+        background-position: 42.86% 50%;
+    }
+    57.14% {
+        background-position: 57.14% 50%;
+    }
+    71.43% {
+        background-position: 71.43% 50%;
+    }
+    85.71% {
+        background-position: 85.71% 50%;
+    }
 }
-
-/* Add more styling for other elements */
-
