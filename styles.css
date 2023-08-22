@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.mode-switch {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 14s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Add more styling for other elements */
+
