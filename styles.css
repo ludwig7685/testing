@@ -2,67 +2,35 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background-color: black;
 }
 
-.text-container {
-    text-align: center;
-    margin-top: 300px;
-    position: relative;
+.part {
+    flex: 1;
 }
 
-.rainbow-outline {
-    font-size: 40px;
+.part1, .part5 {
+    background-color: black;
+}
+
+.part2 {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20vh; /* Adjust as needed */
+}
+
+.part3, .part4 {
+    background-color: black;
+}
+
+.expressalts-text {
+    font-size: 200px;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    display: inline-block;
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow 14s linear infinite;
-}
-
-@keyframes rainbow {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    14.29% {
-        background-position: 14.29% 50%;
-    }
-    28.57% {
-        background-position: 28.57% 50%;
-    }
-    42.86% {
-        background-position: 42.86% 50%;
-    }
-    57.14% {
-        background-position: 57.14% 50%;
-    }
-    71.43% {
-        background-position: 71.43% 50%;
-    }
-    85.71% {
-        background-position: 85.71% 50%;
-    }
-}
-
-.rainbow-outline::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    overflow: hidden;
-    color: black;
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    z-index: -1;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
