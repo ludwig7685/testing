@@ -33,6 +33,6 @@ body {
     color: white;
     text-align: center;
     margin: 0;
-    text-shadow: 0 0 5px green;
+    text-shadow: 5 5 5px green;
     line-height: 1; /* Ensures proper spacing around the letters */
 }
