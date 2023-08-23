@@ -1,39 +1,77 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; /* Default background color */
+  color: white; /* Default text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  display: flex;
+  width: 100%;
 }
 
 .part {
-    flex: 1;
+  height: 100vh;
+  transition: background-color 0.3s;
 }
 
 .part1 {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 25vh; /* Adjust for top 25% */
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.part2, .part4 {
-    background-color: black;
+.part2 {
+  width: 50%;
 }
 
 .part3 {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 25%;
 }
 
-.expressalts-text {
-    font-size: 200px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin: 0;
+.expressalts {
+  text-align: center;
+  margin: 0;
+}
+
+.mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Styles for dark mode */
+input[type="checkbox"] {
+  display: none;
+}
+
+.mode-switch-label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: black; /* Switch background color for dark mode */
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + .mode-switch-label {
+  background-color: white; /* Switch background color for white mode */
+}
+
+input[type="checkbox"]:checked + .mode-switch-label::before {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black; /* Switch color for dark mode */
+  border-radius: 50%;
+  right: 0;
+  transition: transform 0.3s;
+  transform: translateX(-100%);
 }
