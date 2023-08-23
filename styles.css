@@ -5,50 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black; /* Default background color */
-  color: white; /* Default text color */
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.container {
-  display: flex;
-  width: 100%;
-}
-
-.part {
-  height: 100vh;
   transition: background-color 0.3s;
-}
-
-.part1 {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.part2 {
-  width: 50%;
-}
-
-.part3 {
-  width: 25%;
-}
-
-.expressalts {
-  text-align: center;
-  margin: 0;
-  font-size: 200px; /* Default text size */
-}
-
-.green-expressalts {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: green; /* Green text color */
-  font-size: 205px; /* Slightly larger text size */
-  margin: 0;
-  text-align: center;
-  z-index: -1; /* Behind the black text */
 }
 
 .mode-switch {
@@ -57,7 +14,6 @@ body {
   right: 20px;
 }
 
-/* Styles for dark mode */
 input[type="checkbox"] {
   display: none;
 }
@@ -66,14 +22,14 @@ input[type="checkbox"] {
   display: inline-block;
   width: 40px;
   height: 20px;
-  background-color: black; /* Switch background color for dark mode */
+  background-color: black; /* Button background color for dark mode */
   cursor: pointer;
   border-radius: 10px;
   position: relative;
 }
 
 input[type="checkbox"]:checked + .mode-switch-label {
-  background-color: white; /* Switch background color for white mode */
+  background-color: white; /* Button background color for white mode */
 }
 
 input[type="checkbox"]:checked + .mode-switch-label::before {
@@ -81,7 +37,7 @@ input[type="checkbox"]:checked + .mode-switch-label::before {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: black; /* Switch color for dark mode */
+  background-color: black; /* Button color for dark mode */
   border-radius: 50%;
   right: 0;
   transition: transform 0.3s;
