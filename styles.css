@@ -37,6 +37,18 @@ body {
 .expressalts {
   text-align: center;
   margin: 0;
+  font-size: 200px; /* Default text size */
+}
+
+.green-expressalts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: green; /* Green text color */
+  font-size: 205px; /* Slightly larger text size */
+  margin: 0;
+  text-align: center;
+  z-index: -1; /* Behind the black text */
 }
 
 .mode-switch {
