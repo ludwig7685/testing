@@ -2,8 +2,8 @@ const modeToggle = document.getElementById("mode-toggle");
 
 modeToggle.addEventListener("change", () => {
   if (modeToggle.checked) {
-    document.body.classList.add("dark-mode");
+    document.body.style.backgroundColor = "white";
   } else {
-    document.body.classList.remove("dark-mode");
+    document.body.style.backgroundColor = "black";
   }
 });
