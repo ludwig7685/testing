@@ -31,17 +31,3 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .mode-switch-label {
   background-color: black; /* Button background color for white mode */
 }
-
-.headline {
-  font-size: 3rem;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white; /* Default headline color for white mode */
-  transition: color 0.1s;
-}
-
-body.dark-mode .headline {
-  color: white; /* Headline color for dark mode */
-}
