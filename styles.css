@@ -29,17 +29,5 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .mode-switch-label {
-  background-color: white; /* Button background color for white mode */
-}
-
-input[type="checkbox"]:checked + .mode-switch-label::before {
-  content: " ";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: white; /* Button color for dark mode */
-  border-radius: 50%;
-  right: 0;
-  transition: transform 0.1s;
-  transform: translateX(-100%);
+  background-color: black; /* Button background color for white mode */
 }
