@@ -33,9 +33,9 @@ input[type="checkbox"]:checked + .mode-switch-label {
 }
 
 .headline {
-  font-size: 3rem; /* Adjust font size as needed */
+  font-size: 3rem;
   position: absolute;
-  top: 10%; /* Adjust top position as needed */
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   color: black; /* Default headline color for white mode */
@@ -43,5 +43,5 @@ input[type="checkbox"]:checked + .mode-switch-label {
 }
 
 body.dark-mode .headline {
-  color: white; /* Headline color for black mode */
+  color: white; /* Headline color for dark mode */
 }
