@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black; /* Default background color */
-  transition: background-color 0.3s;
+  transition: background-color 0.1s;
 }
 
 .mode-switch {
@@ -22,14 +22,14 @@ input[type="checkbox"] {
   display: inline-block;
   width: 40px;
   height: 20px;
-  background-color: black; /* Button background color for dark mode */
+  background-color: white; /* Button background color for dark mode */
   cursor: pointer;
   border-radius: 10px;
   position: relative;
 }
 
 input[type="checkbox"]:checked + .mode-switch-label {
-  background-color: white; /* Button background color for white mode */
+  background-color: black; /* Button background color for white mode */
 }
 
 input[type="checkbox"]:checked + .mode-switch-label::before {
@@ -37,9 +37,9 @@ input[type="checkbox"]:checked + .mode-switch-label::before {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: black; /* Button color for dark mode */
+  background-color: white; /* Button color for dark mode */
   border-radius: 50%;
   right: 0;
-  transition: transform 0.3s;
+  transition: transform 0.1s;
   transform: translateX(-100%);
 }
