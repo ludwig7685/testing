@@ -38,10 +38,10 @@ input[type="checkbox"]:checked + .mode-switch-label {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  color: black; /* Default headline color for white mode */
+  color: white; /* Default headline color for white mode */
   transition: color 0.1s;
 }
 
-.dark-mode .headline {
+body.dark-mode .headline {
   color: white; /* Headline color for dark mode */
 }
